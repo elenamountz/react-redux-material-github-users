@@ -8,4 +8,7 @@ export default () =>
         main: purple[500],
       },
     },
+    mainContainer: {
+      padding: '30px',
+    },
   });

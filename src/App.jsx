@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, ThemeProvider } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from 'components/layout/AppBar';
-import SearchBar from 'components/SearchBar';
+import Main from 'components/Main';
 import useTheme from './theme';
 
 const muiTheme = useTheme();
@@ -12,10 +11,7 @@ const App = () => {
     <div>
       <ThemeProvider theme={muiTheme}>
         <CssBaseline />
-        <AppBar />
-        <Container maxWidth="md">
-          <SearchBar />
-        </Container>
+        <Main />
       </ThemeProvider>
     </div>
   );
