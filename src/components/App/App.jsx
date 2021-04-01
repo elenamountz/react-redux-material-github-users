@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import AppBar from 'components/layout/AppBar';
 import useTheme from './theme';
-import AppBar from '../layout/AppBar';
 
 const muiTheme = useTheme();
 

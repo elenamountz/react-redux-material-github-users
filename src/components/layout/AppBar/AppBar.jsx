@@ -5,8 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { makeStyles } from '@material-ui/core';
-import ScrollTop from './ScrollTop';
-import HideOnScroll from './HideOnScroll';
+import ScrollTop from 'components/layout/AppBar/ScrollTop';
+import HideOnScroll from 'components/layout/AppBar/HideOnScroll';
 
 const useStyles = makeStyles(() => ({
   logo: {
