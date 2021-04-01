@@ -1,6 +1,6 @@
 import React from 'react';
 import AppBar from 'components/layout/AppBar';
-import SearchBar from 'components/SearchBar';
+import SearchBar from 'components/Main/SearchBar';
 import { Container, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
