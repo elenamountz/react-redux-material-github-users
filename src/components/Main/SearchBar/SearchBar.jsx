@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { fetchUser } from 'redux/actions/userActions';
+import { fetchRepos } from 'redux/actions/reposActions';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,15 +27,20 @@ const SearchBar = () => {
     setUsername(e.target.value);
   };
 
+  const batchDispatch = () => {
+    dispatch(fetchUser(username));
+    dispatch(fetchRepos(username));
+  };
+
   const handleSearch = (e) => {
     e.preventDefault();
     if (username) {
-      dispatch(fetchUser(username));
+      batchDispatch();
     }
   };
 
   useEffect(() => {
-    dispatch(fetchUser(username));
+    batchDispatch();
   }, [dispatch]);
 
   return (
