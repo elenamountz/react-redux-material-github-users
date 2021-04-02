@@ -3,6 +3,7 @@ import AppBar from 'components/layout/AppBar';
 import SearchBar from 'components/Main/SearchBar';
 import { Container, makeStyles } from '@material-ui/core';
 import UserContainer from 'components/Main/UserContainer';
+import Backdrop from 'components/common/Backdrop';
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -19,6 +20,7 @@ const Main = () => {
         <SearchBar />
         <UserContainer />
       </Container>
+      <Backdrop />
     </div>
   );
 };
