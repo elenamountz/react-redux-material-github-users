@@ -9,7 +9,6 @@ const configureStore = () => {
     rootReducer,
     compose(
       applyMiddleware(...middlewares),
-      // eslint-disable-next-line max-len
       window.__REDUX_DEVTOOLS_EXTENSION__ &&
         window.__REDUX_DEVTOOLS_EXTENSION__(),
     ),
