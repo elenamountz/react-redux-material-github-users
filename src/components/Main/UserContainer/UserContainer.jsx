@@ -4,6 +4,7 @@ import NotFound from 'components/common/NotFound';
 import { selectUserData, selectUserError } from 'redux/selectors/userSelector'
 import { makeStyles, Paper } from '@material-ui/core';
 import UserCard from './UserCard';
+import UserTabs from './UserTabs';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,6 +26,7 @@ const UserContainer = () => {
               elevation={0} >
               <UserCard 
               user={user} />
+              <UserTabs />
             </Paper>
           </div>)
         : <NotFound />
