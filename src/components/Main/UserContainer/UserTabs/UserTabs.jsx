@@ -3,6 +3,7 @@ import { makeStyles, Tab, Tabs } from '@material-ui/core';
 import CodeIcon from '@material-ui/icons/Code';
 import GroupIcon from '@material-ui/icons/Group';
 import RepoList from 'components/Main/UserContainer/RepoList';
+import FollowUserList from 'components/Main/UserContainer/FollowUserList';
 import TabPanel from './TabPanel/TabPanel';
 
 const useStyles = makeStyles((theme) => ({
@@ -45,10 +46,10 @@ const UserTabs = () => {
         <RepoList />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <div>Followers</div>
+        <FollowUserList type="followers" />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <div>Following</div>
+        <FollowUserList type="following" />
       </TabPanel>
     </div>
   );

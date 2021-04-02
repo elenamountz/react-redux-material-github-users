@@ -7,6 +7,8 @@ import { makeStyles } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { fetchUser } from 'redux/actions/userActions';
 import { fetchRepos } from 'redux/actions/reposActions';
+import { fetchFollowers } from 'redux/actions/followersActions';
+import { fetchFollowing } from 'redux/actions/followingActions';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +32,8 @@ const SearchBar = () => {
   const batchDispatch = () => {
     dispatch(fetchUser(username));
     dispatch(fetchRepos(username));
+    dispatch(fetchFollowers(username));
+    dispatch(fetchFollowing(username));
   };
 
   const handleSearch = (e) => {
