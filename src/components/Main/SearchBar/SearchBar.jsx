@@ -28,14 +28,14 @@ const SearchBar = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    if(username) {
+    if (username) {
       dispatch(fetchUser(username));
     }
   };
 
   useEffect(() => {
     dispatch(fetchUser(username));
-  }, [dispatch])
+  }, [dispatch]);
 
   return (
     <div>

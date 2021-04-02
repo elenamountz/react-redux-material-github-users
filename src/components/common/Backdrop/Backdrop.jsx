@@ -18,18 +18,16 @@ const BackDrop = () => {
 
   return (
     <div>
-      <MuiBackdrop 
+      <MuiBackdrop
         invisible={false}
-        className={classes.backdrop} 
+        className={classes.backdrop}
         open={isLoading}
-        transitionDuration={600}>
-        <CircularProgress
-          size={50}
-          thickness={3}
-          color="inherit" />
-      </MuiBackdrop>      
+        transitionDuration={600}
+      >
+        <CircularProgress size={50} thickness={3} color="inherit" />
+      </MuiBackdrop>
     </div>
   );
 };
 
-export default BackDrop
+export default BackDrop;
