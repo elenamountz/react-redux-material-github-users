@@ -24,7 +24,7 @@ const AppBar = () => {
         <MuiAppBar>
           <Toolbar disableGutters={false}>
             <img className={classes.logo} src="./github.svg" alt="logo" />
-            <Typography variant="h6">Github Users</Typography>
+            <Typography variant="h6">GitHub Users</Typography>
           </Toolbar>
         </MuiAppBar>
       </HideOnScroll>
