@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, Tab, Tabs } from '@material-ui/core';
 import CodeIcon from '@material-ui/icons/Code';
 import GroupIcon from '@material-ui/icons/Group';
+import RepoList from 'components/Main/UserContainer/RepoList';
 import TabPanel from './TabPanel/TabPanel';
 
 const useStyles = makeStyles((theme) => ({
@@ -41,7 +42,7 @@ const UserTabs = () => {
         <Tab label="FOLLOWING" icon={<GroupIcon />} {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <div>Repos</div>
+        <RepoList />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <div>Followers</div>
