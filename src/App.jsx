@@ -6,15 +6,13 @@ import useTheme from './theme';
 
 const muiTheme = useTheme();
 
-const App = () => {
-  return (
-    <div>
-      <ThemeProvider theme={muiTheme}>
-        <CssBaseline />
-        <Main />
-      </ThemeProvider>
-    </div>
-  );
-};
+const App = () => (
+  <div>
+    <ThemeProvider theme={muiTheme}>
+      <CssBaseline />
+      <Main />
+    </ThemeProvider>
+  </div>
+);
 
 export default App;

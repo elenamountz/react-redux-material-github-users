@@ -19,7 +19,6 @@ const ScrollTop = ({ children }) => {
   });
 
   const handleClick = (event) => {
-    // eslint-disable-next-line prettier/prettier
     const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
 
     if (anchor) {
