@@ -1,7 +1,6 @@
 {
   "extends": [
     "airbnb",
-    "plugin:prettier/recommended",
     "prettier"
   ],
   "env": {
@@ -35,6 +34,7 @@
         "ignoreTemplateLiterals": true,
         "ignoreRegExpLiterals": true
       }
-    ]
+    ],
+    "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }]
   }
 }
