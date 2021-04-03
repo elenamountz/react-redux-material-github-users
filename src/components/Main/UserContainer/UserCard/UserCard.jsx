@@ -20,7 +20,7 @@ const UserCard = ({ user }) => {
         <Grid container justify="flex-start" alignItems="center" spacing={4}>
           <Grid item>
             <Avatar
-              alt="github.svg"
+              alt="images/github.svg"
               src={user.avatar_url}
               className={classes.avatar}
             />

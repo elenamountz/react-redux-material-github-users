@@ -31,7 +31,11 @@ const NotFound = () => {
             </Typography>
           </Grid>
           <Grid item>
-            <Avatar alt="0" src="github.svg" className={classes.avatar} />
+            <Avatar
+              alt="0"
+              src="images/github.svg"
+              className={classes.avatar}
+            />
           </Grid>
           <Grid item>
             <Typography variant="h5" className={classes.status}>
