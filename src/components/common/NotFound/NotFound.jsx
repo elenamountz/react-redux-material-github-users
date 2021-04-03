@@ -13,8 +13,8 @@ const useStyles = makeStyles({
     fontSize: 120,
   },
   avatar: {
-    width: '120px',
-    height: '120px',
+    width: '80px',
+    height: '80px',
   },
 });
 
@@ -24,23 +24,23 @@ const NotFound = () => {
   return (
     <>
       <Paper className={classes.root} elevation={0}>
-        <Grid container spacing={3} justify="center" alignItems="center">
+        <Grid container justify="center" alignItems="center">
           <Grid item>
-            <Typography variant="h1" className={classes.status}>
+            <Typography variant="h5" className={classes.status}>
               4
             </Typography>
           </Grid>
           <Grid item>
-            <Avatar alt="hey" src="github.svg" className={classes.avatar} />
+            <Avatar alt="0" src="github.svg" className={classes.avatar} />
           </Grid>
           <Grid item>
-            <Typography variant="h1" className={classes.status}>
+            <Typography variant="h5" className={classes.status}>
               4
             </Typography>
           </Grid>
         </Grid>
-        <Grid container spacing={0} justify="center" alignItems="flex-end">
-          <Typography variant="h4">Not found, try again...</Typography>
+        <Grid container justify="center" alignItems="flex-end">
+          <Typography variant="h6">Not found, try again...</Typography>
         </Grid>
       </Paper>
     </>
