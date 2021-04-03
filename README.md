@@ -74,7 +74,7 @@ Only one environment variable is required for this application, the GitHub API b
 REACT_APP_BASE_URL = https://api.github.com
 ```
 
-## Install depndencies
+## Install dependencies
 
 Before starting the server, install all the needed dependencies for the project, running the following command:
 
