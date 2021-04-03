@@ -26,7 +26,7 @@ $ npx create-react-app <project-name>
 
 ## Demo
 
-[Netlify](https://www.netlify.com/) is used for automated build and production deployment. Check out the [deployed app](https://elenamountz-github-users.netlify.app//).
+[Netlify](https://www.netlify.com/) is used for automated build and production deployment. Check out the [deployed app](https://elenamountz-github-users.netlify.app).
 
 # App Screenshots
 
